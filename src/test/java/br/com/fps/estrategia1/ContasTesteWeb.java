@@ -17,7 +17,6 @@ public class ContasTesteWeb {
 
   @BeforeEach
   public void login() {
-
     System.setProperty("webdriver.chrome.driver", "/Users/francilenesilva/documents/drivers/chromedriver");
     driver = new ChromeDriver();
 
@@ -29,7 +28,7 @@ public class ContasTesteWeb {
   }
 
   @Test
-  public void ct1_inserirContaTest(){
+  public void ct1_inserirConta(){
     driver.findElement(By.className("dropdown-toggle")).click();
     driver.findElement(By.linkText("Adicionar")).click();
     driver.findElement(By.id("nome")).sendKeys("Conta estrategia #1");
@@ -40,7 +39,7 @@ public class ContasTesteWeb {
   }
 
   @Test
-  public void ct2_consultarContaTest(){
+  public void ct2_consultarConta(){
     driver.findElement(By.className("dropdown-toggle")).click();
     driver.findElement(By.linkText("Listar")).click();
     driver.findElement(By.xpath("//td[contains(text(), 'Conta estrategia #1')]/..//a")).click();
@@ -49,7 +48,7 @@ public class ContasTesteWeb {
   }
 
   @Test
-  public void ct3_alterarContaTest(){
+  public void ct3_alterarConta(){
     driver.findElement(By.className("dropdown-toggle")).click();
     driver.findElement(By.linkText("Listar")).click();
     driver.findElement(By.xpath("//td[contains(text(), 'Conta estrategia #1')]/..//a")).click();
@@ -62,7 +61,7 @@ public class ContasTesteWeb {
   }
 
   @Test
-  public void ct4_deletarContaTest(){
+  public void ct4_deletarConta(){
     driver.findElement(By.className("dropdown-toggle")).click();
     driver.findElement(By.linkText("Listar")).click();
     driver.findElement(By.xpath("//td[contains(text(), 'Conta estrategia #1 alterada')]/..//a[2]")).click();
