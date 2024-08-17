@@ -43,8 +43,6 @@ public class UsuarioServicoTest {
     Usuario usuarioAlterado = service.salvar(usuario);
 
     Assert.assertEquals("Usuario estrategia # Alterado", usuarioAlterado.getNome());
-
-
   }
 
   @Test
@@ -53,7 +51,5 @@ public class UsuarioServicoTest {
     Usuario usuarioRemovido = service.findById(usuarioGlobal.getId());
     Assert.assertNull(usuarioRemovido);
   }
-
-
 
 }

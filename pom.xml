@@ -11,7 +11,7 @@
 		<dependency>
 			<groupId>org.postgresql</groupId>
 			<artifactId>postgresql</artifactId>
-			<version>42.2.2</version>
+			<version>42.6.1</version>
 		</dependency>
 
 		<!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
@@ -24,7 +24,7 @@
 		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
-			<version>4.13</version>
+			<version>4.13.1</version>
 			<scope>test</scope>
 		</dependency>
 
@@ -35,6 +35,14 @@
 			<version>5.10.2</version>
 			<scope>test</scope>
 		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/com.github.javafaker/javafaker -->
+		<dependency>
+			<groupId>com.github.javafaker</groupId>
+			<artifactId>javafaker</artifactId>
+			<version>1.0.2</version>
+		</dependency>
+
 
 
 
@@ -47,9 +55,11 @@
 				<configuration>
 					<source>1.8</source>
 					<target>1.8</target>
+					<encoding>UTF-8</encoding>
 					<compilerArgs>--enable-preview</compilerArgs>
 				</configuration>
 			</plugin>
+
 		</plugins>
 	</build>
 </project>
